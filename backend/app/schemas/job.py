@@ -68,6 +68,7 @@ class JobResponse(BaseModel):
 
 class JobListResponse(BaseModel):
     items: List[JobResponse]
+    jobs: List[JobResponse] = Field(default_factory=list)
     total: int
 
 
@@ -103,4 +104,5 @@ class JobMatchResponse(BaseModel):
 
 class JobMatchListResponse(BaseModel):
     items: List[JobMatchResponse]
+    matches: List[JobMatchResponse] = Field(default_factory=list)
     total: int

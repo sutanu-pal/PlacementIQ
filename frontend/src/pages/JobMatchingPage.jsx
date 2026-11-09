@@ -479,7 +479,8 @@ export function JobMatchingPage() {
   // ── Check resume availability ──
   useEffect(() => {
     resumeAPI.listResumes().then((data) => {
-      const analyzed = (data.items || []).filter((r) => r.status === 'analyzed');
+      const list = data.resumes || data.items || [];
+      const analyzed = list.filter((r) => r.status === 'analyzed');
       setHasResume(analyzed.length > 0);
     }).catch(() => {
       setHasResume(false);

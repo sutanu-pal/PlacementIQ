@@ -99,7 +99,8 @@ async def list_jobs(
                 continue
         items.append(j)
 
-    return JobListResponse(items=[JobResponse.model_validate(j) for j in items], total=total)
+    job_responses = [JobResponse.model_validate(j) for j in items]
+    return JobListResponse(items=job_responses, jobs=job_responses, total=total)
 
 
 @router.get("/{job_id}", response_model=JobResponse)

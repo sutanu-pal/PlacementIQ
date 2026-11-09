@@ -144,4 +144,103 @@ export const jobMatchAPI = {
   },
 };
 
+export const dsaAPI = {
+  listQuestions: async (params = {}) => {
+    const response = await api.get('/dsa/questions', { params });
+    return response.data;
+  },
+  getQuestion: async (idOrSlug) => {
+    const response = await api.get(`/dsa/questions/${idOrSlug}`);
+    return response.data;
+  },
+  submitSolution: async (questionId, payload) => {
+    const response = await api.post(`/dsa/questions/${questionId}/submit`, payload);
+    return response.data;
+  },
+  listSubmissions: async (params = {}) => {
+    const response = await api.get('/dsa/submissions', { params });
+    return response.data;
+  },
+  getSubmission: async (id) => {
+    const response = await api.get(`/dsa/submissions/${id}`);
+    return response.data;
+  },
+  getAnalytics: async () => {
+    const response = await api.get('/dsa/analytics');
+    return response.data;
+  },
+  createQuestion: async (data) => {
+    const response = await api.post('/dsa/questions', data);
+    return response.data;
+  },
+  updateQuestion: async (id, data) => {
+    const response = await api.put(`/dsa/questions/${id}`, data);
+    return response.data;
+  },
+  deleteQuestion: async (id) => {
+    const response = await api.delete(`/dsa/questions/${id}`);
+    return response.data;
+  },
+};
+
+export const interviewAPI = {
+  startSession: async (data) => {
+    const response = await api.post('/interviews/start', data);
+    return response.data;
+  },
+  submitAnswer: async (sessionId, data) => {
+    const response = await api.post(`/interviews/${sessionId}/answer`, data);
+    return response.data;
+  },
+  listSessions: async (params = {}) => {
+    const response = await api.get('/interviews/', { params });
+    return response.data;
+  },
+  getSession: async (id) => {
+    const response = await api.get(`/interviews/${id}`);
+    return response.data;
+  },
+};
+
+export const roadmapAPI = {
+  getRoadmap: async () => {
+    const response = await api.get('/roadmap/');
+    return response.data;
+  },
+  generateRoadmap: async (data) => {
+    const response = await api.post('/roadmap/generate', data);
+    return response.data;
+  },
+  toggleTask: async (taskId) => {
+    const response = await api.post(`/roadmap/tasks/${taskId}/toggle`);
+    return response.data;
+  },
+};
+
+export const readinessAPI = {
+  getReadiness: async () => {
+    const response = await api.get('/readiness/');
+    return response.data;
+  },
+  getHistory: async () => {
+    const response = await api.get('/readiness/history');
+    return response.data;
+  },
+};
+
+export const adminAPI = {
+  getStats: async () => {
+    const response = await api.get('/auth/admin/stats');
+    return response.data;
+  },
+  getUsers: async () => {
+    const response = await api.get('/auth/admin/users');
+    return response.data;
+  },
+  toggleUserStatus: async (userId) => {
+    const response = await api.put(`/auth/admin/users/${userId}/toggle-status`);
+    return response.data;
+  },
+};
+
 export default api;

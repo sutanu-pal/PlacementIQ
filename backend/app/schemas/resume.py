@@ -79,4 +79,5 @@ class ResumeDetailResponse(BaseModel):
 
 class ResumeListResponse(BaseModel):
     resumes: List[ResumeSummaryResponse]
+    items: List[ResumeSummaryResponse] = Field(default_factory=list)
     total: int

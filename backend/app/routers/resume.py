@@ -53,7 +53,7 @@ async def list_resumes(
     """Retrieve history of all resumes uploaded by the current student."""
     resumes = await ResumeService.list_user_resumes(db, current_user.id)
     summaries = [ResumeSummaryResponse.model_validate(r) for r in resumes]
-    return ResumeListResponse(resumes=summaries, total=len(summaries))
+    return ResumeListResponse(resumes=summaries, items=summaries, total=len(summaries))
 
 
 @router.get(

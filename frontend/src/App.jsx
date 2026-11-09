@@ -10,6 +10,9 @@ import { DashboardPage } from './pages/DashboardPage';
 import { ResumeAnalyzerPage } from './pages/ResumeAnalyzerPage';
 import { AdminPage } from './pages/AdminPage';
 import { JobMatchingPage } from './pages/JobMatchingPage';
+import { DsaAssessmentPage } from './pages/DsaAssessmentPage';
+import { MockInterviewPage } from './pages/MockInterviewPage';
+import { LearningRoadmapPage } from './pages/LearningRoadmapPage';
 import { NotFoundPage } from './pages/NotFoundPage';
 
 const AppLayout = ({ children }) => {
@@ -78,18 +81,7 @@ export const App = () => {
           element={
             <ProtectedRoute>
               <AppLayout>
-                <ModulePlaceholderPage
-                  title="DSA Assessment Engine"
-                  moduleNumber="3"
-                  tech="Python Sandboxed Subprocess Runner + 20 Curated Problems"
-                  description="Executes user-submitted algorithm solutions against isolated testcase suites with time & memory quotas, generating topic-wise mastery heatmaps."
-                  pipelineSteps={[
-                    { title: 'Problem Bank', desc: '20 problems across Arrays, Trees, Graphs, DP' },
-                    { title: 'Sandboxed Runner', desc: 'subprocess.run with strict timeout and no network' },
-                    { title: 'Test Evaluation', desc: 'Input/output assertion & timing telemetry' },
-                    { title: 'Mastery Profiler', desc: 'Topic score weighted into composite readiness' },
-                  ]}
-                />
+                <DsaAssessmentPage />
               </AppLayout>
             </ProtectedRoute>
           }
@@ -101,18 +93,7 @@ export const App = () => {
           element={
             <ProtectedRoute>
               <AppLayout>
-                <ModulePlaceholderPage
-                  title="AI Mock Interview"
-                  moduleNumber="4"
-                  tech="Google Gemini 2.5 Flash + Multi-Turn Dialog State"
-                  description="Simulates realistic technical, system design, and behavioral interviews (STAR method) with conversational adaptation and multi-dimensional rubric evaluation."
-                  pipelineSteps={[
-                    { title: 'Session Setup', desc: 'Technical, Behavioral, or HR selection' },
-                    { title: 'Turn Execution', desc: 'Adaptive questions via Gemini 2.5 Flash' },
-                    { title: 'Transcript Store', desc: 'Sequential chat history in PostgreSQL' },
-                    { title: 'Rubric Scoring', desc: 'Communication, depth & problem-solving rating' },
-                  ]}
-                />
+                <MockInterviewPage />
               </AppLayout>
             </ProtectedRoute>
           }
@@ -124,28 +105,17 @@ export const App = () => {
           element={
             <ProtectedRoute>
               <AppLayout>
-                <ModulePlaceholderPage
-                  title="Personalized Learning Roadmap"
-                  moduleNumber="5"
-                  tech="Skill Gap Aggregator + Gemini Milestone Generator"
-                  description="Consolidates weak signals from Resume, Job Matching, DSA, and Mock Interviews into an actionable, prioritized 4-week milestone curriculum."
-                  pipelineSteps={[
-                    { title: 'Gap Synthesis', desc: 'Cross-module weak signal aggregation' },
-                    { title: 'Curriculum Gen', desc: 'Gemini prompts for targeted milestones' },
-                    { title: 'Resource Links', desc: 'Curated problem and concept references' },
-                    { title: 'Progress Tracking', desc: 'Checklist completion updating readiness score' },
-                  ]}
-                />
+                <LearningRoadmapPage />
               </AppLayout>
             </ProtectedRoute>
           }
         />
 
-        {/* Admin Dashboard (Final Scope) */}
+        {/* Admin Dashboard */}
         <Route
           path="/admin"
           element={
-            <ProtectedRoute>
+            <ProtectedRoute requireAdmin={true}>
               <AppLayout>
                 <AdminPage />
               </AppLayout>

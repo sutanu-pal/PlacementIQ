@@ -67,3 +67,20 @@ htmlcov/
 
 # ── Docker ──
 docker-compose.override.yml
+
+# ── Sentence Transformers model caches ──
+sentence_transformers/
+models_cache/
+**/models_cache/
+.cache/
+
+# ── Test artifacts ──
+*.xml
+junit/
+coverage.xml
+
+# ── Alembic staging ──
+alembic/versions/__pycache__/
+
+# ── Windows ──
+Thumbs.db:encryptable

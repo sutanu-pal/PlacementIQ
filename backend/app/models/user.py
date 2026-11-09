@@ -8,6 +8,10 @@ from app.models.base import Base, TimestampMixin, UUIDMixin
 if TYPE_CHECKING:
     from app.models.resume import Resume
     from app.models.job import JobMatch
+    from app.models.dsa import DsaSubmission
+    from app.models.interview import InterviewSession
+    from app.models.roadmap import Roadmap
+    from app.models.readiness import PlacementReadinessSnapshot
 
 
 class User(Base, UUIDMixin, TimestampMixin):
@@ -33,6 +37,30 @@ class User(Base, UUIDMixin, TimestampMixin):
         back_populates="user",
         cascade="all, delete-orphan",
         order_by="desc(JobMatch.created_at)",
+    )
+    dsa_submissions: Mapped[List["DsaSubmission"]] = relationship(
+        "DsaSubmission",
+        back_populates="user",
+        cascade="all, delete-orphan",
+        order_by="desc(DsaSubmission.created_at)",
+    )
+    interview_sessions: Mapped[List["InterviewSession"]] = relationship(
+        "InterviewSession",
+        back_populates="user",
+        cascade="all, delete-orphan",
+        order_by="desc(InterviewSession.created_at)",
+    )
+    roadmaps: Mapped[List["Roadmap"]] = relationship(
+        "Roadmap",
+        back_populates="user",
+        cascade="all, delete-orphan",
+        order_by="desc(Roadmap.created_at)",
+    )
+    readiness_snapshots: Mapped[List["PlacementReadinessSnapshot"]] = relationship(
+        "PlacementReadinessSnapshot",
+        back_populates="user",
+        cascade="all, delete-orphan",
+        order_by="desc(PlacementReadinessSnapshot.created_at)",
     )
 
     def __repr__(self) -> str:

@@ -56,7 +56,7 @@ async def list_user_matches(
             resp.job_location = m.job.location
         items.append(resp)
 
-    return JobMatchListResponse(items=items, total=total)
+    return JobMatchListResponse(items=items, matches=items, total=total)
 
 
 @router.get("/{match_id}", response_model=JobMatchResponse)

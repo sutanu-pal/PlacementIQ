@@ -10,7 +10,7 @@ from fastapi.responses import JSONResponse
 from app.config import get_settings
 from app.database import engine
 from app.models.base import Base
-from app.routers import auth, health, job_matches, jobs, resume
+from app.routers import auth, dsa, health, interview, job_matches, jobs, readiness, resume, roadmap
 
 settings = get_settings()
 
@@ -62,6 +62,10 @@ app.include_router(auth.router, prefix="/api/v1")
 app.include_router(resume.router, prefix="/api/v1")
 app.include_router(jobs.router, prefix="/api/v1")
 app.include_router(job_matches.router, prefix="/api/v1")
+app.include_router(dsa.router, prefix="/api/v1")
+app.include_router(interview.router, prefix="/api/v1")
+app.include_router(roadmap.router, prefix="/api/v1")
+app.include_router(readiness.router, prefix="/api/v1")
 
 
 @app.get("/", tags=["Root"])
