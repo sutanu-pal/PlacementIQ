@@ -1,0 +1,117 @@
+{
+  "version": "1.0",
+  "categories": {
+    "programming_languages": {
+      "name": "Programming Languages",
+      "skills": [
+        {"name": "Python", "aliases": ["python3", "py"]},
+        {"name": "Java", "aliases": ["core java", "java 8", "java 11", "java 17", "java 21"], "case_sensitive": false},
+        {"name": "C++", "aliases": ["cpp", "c plus plus"], "exact_symbols": true},
+        {"name": "C", "aliases": ["c language", "ansi c"], "exact_symbols": true},
+        {"name": "C#", "aliases": ["csharp", "c sharp"], "exact_symbols": true},
+        {"name": "JavaScript", "aliases": ["js", "es6", "ecmascript"]},
+        {"name": "TypeScript", "aliases": ["ts"]},
+        {"name": "SQL", "aliases": ["structured query language", "pl/sql", "t-sql"]},
+        {"name": "Go", "aliases": ["golang"], "case_sensitive": false},
+        {"name": "Rust", "aliases": ["rust-lang"]},
+        {"name": "Kotlin", "aliases": []},
+        {"name": "Swift", "aliases": []},
+        {"name": "PHP", "aliases": []},
+        {"name": "Ruby", "aliases": []},
+        {"name": "R", "aliases": ["r language", "r-project"], "exact_symbols": true},
+        {"name": "Scala", "aliases": []},
+        {"name": "Bash", "aliases": ["shell script", "shell scripting", "sh", "zsh"]},
+        {"name": "HTML5", "aliases": ["html"]},
+        {"name": "CSS3", "aliases": ["css"]}
+      ]
+    },
+    "frameworks_and_libraries": {
+      "name": "Frameworks & Libraries",
+      "skills": [
+        {"name": "React", "aliases": ["react.js", "reactjs"]},
+        {"name": "Next.js", "aliases": ["nextjs"]},
+        {"name": "Node.js", "aliases": ["nodejs", "node"]},
+        {"name": "Express.js", "aliases": ["expressjs", "express"]},
+        {"name": "FastAPI", "aliases": ["fast-api"]},
+        {"name": "Django", "aliases": ["django rest framework", "drf"]},
+        {"name": "Flask", "aliases": []},
+        {"name": "Spring Boot", "aliases": ["spring", "spring framework", "springboot"]},
+        {"name": "Angular", "aliases": ["angularjs", "angular 2+"]},
+        {"name": "Vue.js", "aliases": ["vuejs", "vue"]},
+        {"name": "Tailwind CSS", "aliases": ["tailwindcss"]},
+        {"name": "Bootstrap", "aliases": []},
+        {"name": ".NET Core", "aliases": [".net", "asp.net", "dotnet"], "exact_symbols": true},
+        {"name": "GraphQL", "aliases": []},
+        {"name": "Redux", "aliases": ["redux toolkit", "rtk"]}
+      ]
+    },
+    "ai_and_machine_learning": {
+      "name": "AI, ML & Data Science",
+      "skills": [
+        {"name": "Machine Learning", "aliases": ["ml"]},
+        {"name": "Deep Learning", "aliases": ["dl"]},
+        {"name": "Natural Language Processing", "aliases": ["nlp"]},
+        {"name": "Computer Vision", "aliases": ["cv"]},
+        {"name": "TensorFlow", "aliases": ["tf"]},
+        {"name": "PyTorch", "aliases": ["torch"]},
+        {"name": "Scikit-Learn", "aliases": ["sklearn", "scikit learn"]},
+        {"name": "Pandas", "aliases": []},
+        {"name": "NumPy", "aliases": []},
+        {"name": "Keras", "aliases": []},
+        {"name": "OpenCV", "aliases": ["cv2"]},
+        {"name": "Hugging Face", "aliases": ["transformers", "huggingface"]},
+        {"name": "Large Language Models", "aliases": ["llm", "llms", "genai", "generative ai"]},
+        {"name": "LangChain", "aliases": []},
+        {"name": "Matplotlib", "aliases": []},
+        {"name": "Seaborn", "aliases": []}
+      ]
+    },
+    "databases": {
+      "name": "Databases & Storage",
+      "skills": [
+        {"name": "PostgreSQL", "aliases": ["postgres", "pgsql"]},
+        {"name": "MySQL", "aliases": []},
+        {"name": "MongoDB", "aliases": ["mongo"]},
+        {"name": "SQLite", "aliases": ["sqlite3"]},
+        {"name": "Redis", "aliases": []},
+        {"name": "Cassandra", "aliases": []},
+        {"name": "DynamoDB", "aliases": []},
+        {"name": "Firebase", "aliases": ["firestore"]},
+        {"name": "Elasticsearch", "aliases": ["elastic search"]},
+        {"name": "Oracle DB", "aliases": ["oracle database"]}
+      ]
+    },
+    "cloud_and_devops": {
+      "name": "Cloud & DevOps",
+      "skills": [
+        {"name": "Docker", "aliases": ["containerization", "containers"]},
+        {"name": "Kubernetes", "aliases": ["k8s"]},
+        {"name": "AWS", "aliases": ["amazon web services", "ec2", "s3", "lambda"]},
+        {"name": "Google Cloud", "aliases": ["gcp", "google cloud platform"]},
+        {"name": "Azure", "aliases": ["microsoft azure"]},
+        {"name": "CI/CD", "aliases": ["continuous integration", "continuous deployment"]},
+        {"name": "GitHub Actions", "aliases": []},
+        {"name": "Jenkins", "aliases": []},
+        {"name": "Linux", "aliases": ["ubuntu", "debian", "centos", "redhat"]},
+        {"name": "Nginx", "aliases": []},
+        {"name": "Terraform", "aliases": []}
+      ]
+    },
+    "tools_and_concepts": {
+      "name": "Tools & Core CS Concepts",
+      "skills": [
+        {"name": "Git", "aliases": ["git version control"]},
+        {"name": "GitHub", "aliases": []},
+        {"name": "GitLab", "aliases": []},
+        {"name": "Postman", "aliases": []},
+        {"name": "RESTful APIs", "aliases": ["rest api", "restful api", "rest apis"]},
+        {"name": "Data Structures", "aliases": ["dsa", "data structures and algorithms"]},
+        {"name": "Algorithms", "aliases": []},
+        {"name": "Object-Oriented Programming", "aliases": ["oop", "oops"]},
+        {"name": "Operating Systems", "aliases": ["os concepts"]},
+        {"name": "DBMS", "aliases": ["database management systems"]},
+        {"name": "Computer Networks", "aliases": ["networking", "tcp/ip"]}
+      ]
+    }
+  }
+}

@@ -1,0 +1,69 @@
+# ============================
+# PlacementIQ .gitignore
+# ============================
+
+# ── Python ──
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+.eggs/
+*.whl
+
+# ── Virtual Environment ──
+venv/
+.venv/
+env/
+
+# ── Node / Frontend ──
+node_modules/
+frontend/dist/
+frontend/.vite/
+*.tsbuildinfo
+
+# ── Environment Variables ──
+.env
+.env.local
+.env.*.local
+
+# ── IDE ──
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ── OS ──
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Uploads ──
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# ── Database ──
+*.db
+*.sqlite3
+
+# ── ML Models (downloaded at runtime) ──
+backend/models_cache/
+.cache/huggingface/
+*.safetensors
+*.bin
+
+# ── Logs ──
+*.log
+logs/
+
+# ── Coverage ──
+htmlcov/
+.coverage
+.pytest_cache/
+
+# ── Docker ──
+docker-compose.override.yml

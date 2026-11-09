@@ -1,0 +1,146 @@
+[
+  {
+    "title": "Graduate Backend Engineer (Python / FastAPI)",
+    "company": "ApexTech Cloud Systems [Synthetic Benchmark]",
+    "description": "ApexTech is seeking an entry-level Graduate Backend Engineer to join our core microservices platform team. You will participate in architecting scalable RESTful APIs, optimizing relational database schemas, and writing unit-tested service layers.",
+    "responsibilities": [
+      "Develop and maintain high-performance REST APIs using Python and FastAPI.",
+      "Design database schemas and optimize query performance in PostgreSQL using SQLAlchemy.",
+      "Write comprehensive unit and integration tests using pytest.",
+      "Collaborate with frontend engineers to integrate contracts and schemas."
+    ],
+    "eligibility_criteria": {
+      "min_cgpa": 7.0,
+      "allowed_branches": ["CSE", "IT", "AI & ML", "ECE"],
+      "min_semester": 7
+    },
+    "required_skills": ["Python", "FastAPI", "PostgreSQL", "SQLAlchemy", "Git"],
+    "preferred_skills": ["Docker", "Redis", "Linux", "Pytest"],
+    "experience_level": "Fresher / Entry Level",
+    "location": "Bengaluru (Hybrid)",
+    "employment_type": "Full-time",
+    "salary_range": "₹8.0 - 12.0 LPA",
+    "is_active": true,
+    "is_synthetic": true
+  },
+  {
+    "title": "Junior Frontend Developer (React / TypeScript)",
+    "company": "NovaUI Digital Labs [Synthetic Benchmark]",
+    "description": "NovaUI is looking for an enthusiastic Junior Frontend Developer to build intuitive, accessible, and responsive user interfaces for modern web applications.",
+    "responsibilities": [
+      "Build modular, responsive UI components using React, TypeScript, and Tailwind CSS.",
+      "Integrate RESTful backends and handle asynchronous loading and error states cleanly.",
+      "Optimize web vital metrics, bundle size, and rendering performance.",
+      "Participate in design system reviews and maintain UI consistency."
+    ],
+    "eligibility_criteria": {
+      "min_cgpa": 6.5,
+      "allowed_branches": ["CSE", "IT", "AI & ML", "ECE", "EEE"],
+      "min_semester": 7
+    },
+    "required_skills": ["React", "JavaScript", "TypeScript", "Tailwind CSS", "HTML5", "CSS3"],
+    "preferred_skills": ["Redux", "Vite", "Next.js", "Figma"],
+    "experience_level": "Fresher / Entry Level",
+    "location": "Hyderabad (On-site)",
+    "employment_type": "Full-time",
+    "salary_range": "₹7.0 - 10.0 LPA",
+    "is_active": true,
+    "is_synthetic": true
+  },
+  {
+    "title": "Associate AI & ML Research Engineer",
+    "company": "CognitiveMatrix Labs [Synthetic Benchmark]",
+    "description": "Join our applied AI team to build predictive models, NLP extraction pipelines, and machine learning scoring mechanisms for enterprise applications.",
+    "responsibilities": [
+      "Implement machine learning and deep learning pipelines with Scikit-learn and PyTorch.",
+      "Build semantic text extraction and embedding similarity engines using Transformers.",
+      "Conduct feature engineering, hyperparameter tuning, and error analysis.",
+      "Deploy ML inference microservices with containerization."
+    ],
+    "eligibility_criteria": {
+      "min_cgpa": 7.5,
+      "allowed_branches": ["CSE", "AI & ML", "Data Science"],
+      "min_semester": 7
+    },
+    "required_skills": ["Python", "Machine Learning", "PyTorch", "Scikit-Learn", "NumPy", "Pandas"],
+    "preferred_skills": ["Transformers", "NLP", "FastAPI", "Docker", "HuggingFace"],
+    "experience_level": "Fresher / Entry Level",
+    "location": "Bengaluru (Remote Friendly)",
+    "employment_type": "Full-time",
+    "salary_range": "₹10.0 - 16.0 LPA",
+    "is_active": true,
+    "is_synthetic": true
+  },
+  {
+    "title": "Full Stack Software Engineer Intern",
+    "company": "VelocityStack Software [Synthetic Benchmark]",
+    "description": "VelocityStack is hiring Full Stack Developer interns to build end-to-end features spanning React dashboards and Node/Express backend microservices.",
+    "responsibilities": [
+      "Develop end-to-end web features across client-side and server-side components.",
+      "Write database queries and migrations for PostgreSQL and MongoDB.",
+      "Implement secure JWT authentication and role-based access control.",
+      "Troubleshoot API integration issues and ensure cross-browser compatibility."
+    ],
+    "eligibility_criteria": {
+      "min_cgpa": 6.5,
+      "allowed_branches": ["CSE", "IT", "AI & ML"],
+      "min_semester": 6
+    },
+    "required_skills": ["JavaScript", "Node.js", "React", "PostgreSQL", "Express.js"],
+    "preferred_skills": ["MongoDB", "Docker", "REST APIs", "TypeScript"],
+    "experience_level": "Fresher / Entry Level",
+    "location": "Pune (Hybrid)",
+    "employment_type": "Internship",
+    "salary_range": "₹35,000 - 45,000 / month",
+    "is_active": true,
+    "is_synthetic": true
+  },
+  {
+    "title": "Junior DevOps & Cloud Associate",
+    "company": "InfraScale Networks [Synthetic Benchmark]",
+    "description": "Seeking an early-career Cloud & DevOps Associate to assist with continuous integration, containerization, cloud infrastructure monitoring, and automated deployments.",
+    "responsibilities": [
+      "Build Docker containers and maintain image repositories.",
+      "Maintain GitHub Actions CI/CD workflows for automated build, test, and linting.",
+      "Configure cloud monitoring and alert dashboards on AWS or GCP.",
+      "Write bash scripts to automate system maintenance and backup routines."
+    ],
+    "eligibility_criteria": {
+      "min_cgpa": 6.5,
+      "allowed_branches": ["CSE", "IT", "ECE"],
+      "min_semester": 7
+    },
+    "required_skills": ["Linux", "Docker", "Git", "Bash", "AWS"],
+    "preferred_skills": ["Kubernetes", "CI/CD", "Terraform", "Python", "Prometheus"],
+    "experience_level": "Fresher / Entry Level",
+    "location": "Remote",
+    "employment_type": "Full-time",
+    "salary_range": "₹7.5 - 11.0 LPA",
+    "is_active": true,
+    "is_synthetic": true
+  },
+  {
+    "title": "Data Analyst Trainee",
+    "company": "MetrixPulse Analytics [Synthetic Benchmark]",
+    "description": "MetrixPulse is looking for a data-driven individual to analyze student placement metrics, create interactive dashboards, and build SQL transformation queries.",
+    "responsibilities": [
+      "Query complex multi-table databases using advanced SQL joins and window functions.",
+      "Clean, aggregate, and visualize institutional metrics with Python and Pandas.",
+      "Design reporting dashboards in Tableau or Power BI.",
+      "Identify placement trends and highlight actionable academic insights."
+    ],
+    "eligibility_criteria": {
+      "min_cgpa": 6.0,
+      "allowed_branches": ["CSE", "IT", "Data Science", "ECE", "Mechanical"],
+      "min_semester": 7
+    },
+    "required_skills": ["SQL", "Python", "Pandas", "Excel", "Data Analysis"],
+    "preferred_skills": ["Tableau", "Power BI", "NumPy", "Matplotlib"],
+    "experience_level": "Fresher / Entry Level",
+    "location": "Chennai (On-site)",
+    "employment_type": "Full-time",
+    "salary_range": "₹5.5 - 8.0 LPA",
+    "is_active": true,
+    "is_synthetic": true
+  }
+]
